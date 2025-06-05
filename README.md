@@ -169,7 +169,7 @@ npm run dev
 ![reports](https://github.com/user-attachments/assets/0256c5ff-a956-4822-9624-59373a014c94)
 ![orders](https://github.com/user-attachments/assets/fdbe93b3-6b61-453e-9921-64b972a937a9)
 
-> *Tip: Show dashboards, cart view, PDF export, and charts for better visual overview.*
+
 
 ---
 
