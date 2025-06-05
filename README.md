@@ -119,7 +119,7 @@ npm run dev
 
 ## 🏃‍♂️ How to Use
 
-1. Visit `http://localhost:3000`
+1. Visit `http://localhost:5173`
 2. Register as a **Farmer**, **Retailer**, or **Admin**
 3. Explore each dashboard:
 
@@ -149,16 +149,25 @@ npm run dev
 * `farmer` — Farmer profile info
 * `retailer` — Retailer profile info
 
+### 📊 How to Import Database into XAMPP
+
+1. Start Apache and MySQL from your XAMPP Control Panel.
+2. Open your browser and go to `http://localhost/phpmyadmin`
+3. Create a new database (e.g., `farm2store`)
+4. Click on the `Import` tab
+5. Choose the `.sql` file provided in the `backend` folder (or wherever your DB dump file is located)
+6. Click **Go** to import the database structure and data
+7. Ensure your `db.js` MySQL connection config matches the database name, username (`root` by default), and password (empty by default on XAMPP)
+
 ---
 
 ## 📸 Screenshots
 
 <!-- Add UI screenshots here -->
+
 ![homepage](https://github.com/user-attachments/assets/a7bb9c11-cf0e-47db-b4d1-37757de78784)
 ![reports](https://github.com/user-attachments/assets/0256c5ff-a956-4822-9624-59373a014c94)
 ![orders](https://github.com/user-attachments/assets/fdbe93b3-6b61-453e-9921-64b972a937a9)
-
-
 
 > *Tip: Show dashboards, cart view, PDF export, and charts for better visual overview.*
 
