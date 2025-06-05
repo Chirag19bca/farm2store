@@ -1,0 +1,93 @@
+.dashboardContainer {
+  width: 1480px;
+  margin: 0 ;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #bceabc; /* Subtle background color */
+  min-height: 100vh; /* Ensure full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.tabs button {
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tabs button:hover {
+  background-color: #ddd;
+  border-color: #4CAF50;
+}
+
+.tabs button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.activeTab {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.content {
+  width: 90%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1366px) {
+  .dashboardContainer {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs button {
+    width: 100%;
+  }
+}

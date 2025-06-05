@@ -1,0 +1,118 @@
+.footer {
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+    color: white;
+    padding: 40px 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 5px solid white;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer_section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer_section h2,
+.footer_section h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footer_section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer_section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_section ul li {
+    margin: 8px 0;
+}
+
+.footer_section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer_section ul li a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+.social_icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social_icons a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social_icons a:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+}
+
+.footer_bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+}
+
+.footer_bottom p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.hrf{
+    color: #ffd700;
+}
+.hrf a:hover{
+    color: yellow;
+}
+
+/* WhatsApp Button */
+.whatsapp_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp_button svg {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.whatsapp_button:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+}

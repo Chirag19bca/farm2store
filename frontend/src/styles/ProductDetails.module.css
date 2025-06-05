@@ -1,0 +1,132 @@
+.productDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.coc{
+  width: 1520px;
+}
+
+.productImage {
+  flex-shrink: 0;
+}
+
+.productImage img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow for better visibility */
+}
+
+.productInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+h2 {
+  margin: 0;
+  color: #333;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 22px;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.productInfo p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantitySelector label {
+  font-weight: bold;
+}
+
+.quantityInput {
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.addToCart {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  max-width: 250px;
+  font-weight: bold;
+}
+
+.addToCart:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.addToCart:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .productDetails {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .productImage img {
+    width: 80%;
+  }
+
+  .productInfo {
+    max-width: 90%;
+  }
+
+  .addToCart {
+    width: 90%;
+  }
+}
+
+/* Loading Text */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #666;
+}
+

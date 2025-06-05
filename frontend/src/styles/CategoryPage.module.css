@@ -1,0 +1,83 @@
+.categoryContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.con{
+  width: 1520px;
+}
+
+/* Improved Grid Layout */
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Styled Product Cards */
+.productCard {
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.productImage {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Product Title */
+.productName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+/* Price Styling */
+.price {
+  font-size: 18px;
+  color: #27ae60;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styled View Details Button */
+.viewDetails {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.2s ease-in-out;
+}
+
+.viewDetails:hover {
+  background-color: #1b5e20;
+}

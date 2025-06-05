@@ -1,0 +1,192 @@
+.registerContainer {
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  border: 2px solid #22c55e;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+  margin: 20px auto;
+  text-align: center;
+  color: black;
+}
+
+.con{
+  width: 1520px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+/* Error Styling */
+.error_message {
+  text-align: left;
+  color: red;
+  font-size: 14px;
+}
+
+/* Heading */
+.heading {
+  font-weight: bold;
+  font-size: 28px;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+/* Input Container */
+.inputContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Label Styling */
+.label {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Input Styling */
+.input {
+  width: 100%;
+  background: white;
+  color: black;
+  border: 2px solid #22c55e;
+  padding: 14px 12px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input::placeholder {
+  color: grey;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid #16a34a;
+}
+
+/* Password Container */
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.passwordContainer .input {
+  padding-right: 40px;
+}
+
+/* Eye Icon */
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #22c55e;
+  padding: 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.eyeIcon:hover {
+  color: #16a34a;
+}
+
+/* Register Button */
+.register_button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: #22c55e;
+  color: white;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register_button:hover {
+  background: #16a34a;
+}
+
+.register_button:active {
+  background: #15803d;
+}
+
+/* Register Link */
+.login_link {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login_link a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login_link a:hover {
+  text-decoration: underline;
+}
+
+/* Agreement Text */
+.agreement {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.agreement a {
+  text-decoration: none;
+  color: #22c55e;
+}
+
+/* Tabs Styling */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #22c55e;
+  background: white;
+  color: #22c55e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs button:hover {
+  background: #22c55e;
+  color: white;
+}
+
+.tabs button.active {
+  background: #22c55e;
+  color: white;
+}
+

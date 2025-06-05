@@ -1,0 +1,176 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation & Buttons Container */
+.nav_button_container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Navigation Links */
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.nav_links a:hover {
+  color: #ff6600;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown_btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.dropdown_content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.dropdown_content a:hover {
+  background: #f1f1f1;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+/* Buttons */
+.button_container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart_btn, .logout_btn, .login_btn {
+  padding: 10px 18px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart_btn { background: #ff6600; color: #fff; }
+.cart_btn:hover { background: #e65c00; }
+
+.logout_btn { background: #f44336; color: #fff; }
+.logout_btn:hover { background: #d32f2f; }
+
+.login_btn { background: #007bff; color: #fff; }
+.login_btn:hover { background: #0056b3; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+  }
+
+  .nav_links a {
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .nav_links.active {
+    display: flex;
+  }
+
+  .menu_icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+.search_form {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search_input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+  background: transparent;
+}
+
+.search_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+@media (min-width: 769px) {
+  .menu_icon {
+    display: none;
+  }
+}

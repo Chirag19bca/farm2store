@@ -1,0 +1,125 @@
+/* Container Styling */
+.container {
+  width: 1480px;
+  margin: 0 auto; /* Centers the container */
+  padding: 20px;
+  background-color: #bceabc;
+}
+
+/* Fix "Show All" button alignment */
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* Goods Section */
+.goods_section {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Goods Header (Title & Button in the same row) */
+.goods_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* "Show All" Button */
+.view_all {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.view_all:hover {
+  background-color: #005f7f;
+}
+
+/* Left-Aligned Title */
+.goods_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Goods Container */
+.goods_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Goods Item Card */
+.goods_item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.goods_item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+/* Product Image - Maintain Consistent Size */
+.goods_item img {
+  width: 100%;
+  height: 200px; /* Set fixed height */
+  object-fit: cover; /* Ensure the image fills the space without distortion */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product Name */
+.goods_item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Price Section */
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.old_price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+/* Add to Cart Button */
+.add_to_cart {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add_to_cart:hover {
+  background-color: #219150;
+}
