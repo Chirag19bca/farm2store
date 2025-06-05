@@ -19,7 +19,7 @@ Farm2Store is a full-stack web application that connects farmers and retailers i
 ## 🧰 Tech Stack
 
 ### Frontend
-- React.js (v19)
+- React.js (v19+)
 - Vite
 - React Router v7
 - Axios
