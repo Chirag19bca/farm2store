@@ -127,6 +127,8 @@ npm run dev
 
 ## 📸 Screenshots
 
+![homepage](https://github.com/user-attachments/assets/7c6dc216-f624-46ec-ba8e-ace2c5c9459b)
+
 _Add screenshots here to show off the UI!_
 
 ---
